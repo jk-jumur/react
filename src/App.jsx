@@ -1,19 +1,43 @@
 
 import './App.css'
 import ToDo from './Todo';
-import Actor from './actor'
+import Actor from './actor';
+import Singer from './singer';
+import Library from './library'
 
 function App() {
-      const actors = ['Bappa Raj', 'Omar Sunny', 'Salman Shah', 'jamal', 'kuddus khan'];
+      // const actors = ['Bappa Raj', 'Omar Sunny', 'Salman Shah', 'jamal', 'kuddus khan'];
+
+      const singers = [
+            {id: 1,  name: 'selena gomez', age: 33 },
+            {id: 2, name: 'luchu tahsan', age: 45},
+            {id: 3, name: 'billie eilish', age: 24 }
+      ];
+
+        const books = [
+         {id: 1, name: 'Middlemarch by George Eliot', price: 670},
+         {id: 2, name: 'Wuthering Heights by Emily Brontë', price: 750},
+         {id: 3, name: 'Great Expectations by Charles Dickens', price: 880},
+         {id: 4, name: 'The Importance of Being Earnest by Oscar Wilde', price: 990},
+         {id: 5, name: 'The Odyssey and The Iliad by Homer', price: 760},
+         {id: 6, name: 'Crime and Punishment by Fyodor Dostoevsky', price: 690},
+         {id: 7, name: 'The Aeneid by Virgil', price: 550}
+        ]
+
      // const time = 50;
   return (
      <>
-       <h1>React Core Concept</h1>
+         {/* <h1>React Core Concept</h1> */}
+         <Library books={books}></Library>
 
-      {
+      {/* {
         actors.map(actor =>
            <Actor key={actor} actor={actor}></Actor>
        )
+      } */}
+
+      {
+          singers.map(singer => <Singer key={singer.id} singer={singer}></Singer>)
       }
        {/* <ToDo
        task="Learn React"

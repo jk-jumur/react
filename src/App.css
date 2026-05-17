@@ -183,7 +183,7 @@
   }
 }
 
-.student{
+.student, .singer{
     color:#8a2be2;
     border: 5px solid red;
     margin: 10px;
