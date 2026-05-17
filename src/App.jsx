@@ -1,14 +1,21 @@
 
 import './App.css'
-import ToDo from './assets/Todo';
+import ToDo from './Todo';
+import Actor from './actor'
 
 function App() {
- 
-     const time = 50;
+      const actors = ['Bappa Raj', 'Omar Sunny', 'Salman Shah', 'jamal', 'kuddus khan'];
+     // const time = 50;
   return (
      <>
        <h1>React Core Concept</h1>
-       <ToDo
+
+      {
+        actors.map(actor =>
+           <Actor key={actor} actor={actor}></Actor>
+       )
+      }
+       {/* <ToDo
        task="Learn React"
         isDone={true} 
         time={time}></ToDo>
@@ -19,7 +26,7 @@ function App() {
        <ToDo 
        task="Take a shower" 
        isDone={true}
-       time=""></ToDo>
+       time=""></ToDo> */}
       
        {/* <h2>React Core Concept</h2>
        <Person></Person>
