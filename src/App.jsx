@@ -6,11 +6,11 @@ import Singer from './singer';
 import Library from './library'
 
 function App() {
-      // const actors = ['Bappa Raj', 'Omar Sunny', 'Salman Shah', 'jamal', 'kuddus khan'];
+      // const actors = ['Bappa Raj', 'Omar Sunny', 'Salman Shah', 'jamal'];
 
       const singers = [
             {id: 1,  name: 'selena gomez', age: 33 },
-            {id: 2, name: 'luchu tahsan', age: 45},
+            {id: 2, name: 'Lana Del Rey', age: 40},
             {id: 3, name: 'billie eilish', age: 24 }
       ];
 
